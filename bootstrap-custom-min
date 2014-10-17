@@ -1,0 +1,381 @@
+/* Bootstrap customizations */
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {font-family: "montserrat", Helvetica, Arial, sans-serif!important;}
+/* Bootstrap customizations */
+/*****************container css**********
+*****************************************/
+body {	background:#f8f8f8;}
+/****************Header Css***********************
+*************************************************/
+.header-bg {padding:20px 0;	width:100%;	display:inline-block;}
+.signin-box {margin:0px;}
+.signin-box img {border: 2px solid #333;	border-radius: 50%;	float: left; height: 58px; margin-right: 10px;	width: 58px;}
+.msg-body {	display:block; color:#666366; margin-top:10px;}
+.msg-body .welcome {font:12px "montserrat";	text-align:right;}
+.msg-body strong {	font:13px "montserrat";	color:#333;}
+.icon-ok {	background: none repeat scroll 0 0 #093;	border-radius: 50%;	color: #fff;	font-size: 10px;	left: 15px;	padding: 3px;	position: absolute !important;	top: 2px !important;}
+.msg-body .signed { font:10px "montserrat";  text-align:right;  padding: 0px;  display:block;}
+/*****************nav-pills navigation***
+*****************************************/
+.mycontent .nav {padding-left: 0; margin-bottom: 0; margin-top: 25px; margin-right:10px; list-style: none;}
+.mycontent .nav > li > a { display: block;	padding:6px 20px; font:bold 12px "Montserrat";}
+.mycontent .nav > li > a:hover { background:#87212e; color:#fff;}
+.mycontent .nav-pills > li > a {	border-radius:25px;	color:#333;	text-decoration:none;}
+.mycontent .nav-pills > li + li {margin-left: 25px;}
+.mycontent .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus{color:#fff; background-color:#87212e;}
+.mycontent .nav-tabs:after, .nav-pills:after {	clear: both;}
+ @media (max-width:480px) {
+.container {width:94%;}
+.mycontent .nav-pills > li + li { margin-left:10px;}
+}
+ @media (max-width:360px) {
+.mycontent .nav-pills > li + li { margin-left:10px;}
+}
+ @media (max-width:320px) {
+.mycontent .nav-pills > li + li { margin-left:10px;}
+}
+/* MAIN MENU */
+.btn-menu {	display: inline-block;	padding:3px 6px; margin-bottom: 0;	font-size: 14px; font-weight: normal; line-height: 1.42857143;
+text-align: center;	white-space: nowrap;	vertical-align: middle;	cursor: pointer; -webkit-user-select: none;	-moz-user-select: none;
+-ms-user-select: none;	user-select: none;	background-image: none;	border: 1px solid transparent;}
+.btn-default-menu { color: #fff; background-color: #666366; font-size:20px; border-radius:20px;}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {color: #fff; background-color: #757275; 	border-color: #757275;}
+.btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {background-image: none;}
+.dropdown-menu-main{ min-width:265px}
+.dropdown-menu-main {position:absolute; top: 100%;	left: 0; z-index: 1000;	display: none;	float:left; min-width:250px; padding:0px;font-size: 14px; list-style: none;	background-color: #757275;	background-clip: padding-box;}
+.dropdown-menu-main > li {background-color:#666366; max-height:140px; display: block; clear: both; padding:20px 10px; white-space: nowrap;	position:relative;}
+.dropdown-menu-main .victoria {	background-color:#e1e1e1; padding:10px;	display: block;	clear: both; white-space: nowrap; position:relative;}
+.dropdown-menu-main .victoria img {	border-radius:50%;	float:left;	width:58px;	height:58px; border:2px solid #333;	margin-right:10px;}
+.victoria span {font:12px "Montserrat";}
+.victoria .signout{font:10px "Montserrat";	color:#0000ff;}
+.victoria .signout a {color:#0000ff;}
+.victoria .space {margin-top:8px;}
+.victoria p {font:14px/15px "Montserrat";/*15Oct14*/color:#0000ff;	margin:0px;	padding:0px;}
+.victoria p a {	color:#0000ff;	margin:0px;	padding:0px;}
+.dropdown-menu-main .victoria { background-color:#e1e1e1; padding:10px; display: block; clear: both; white-space:nowrap; position:relative;
+min-height:78px;}
+.dropdown-menu-main > li div {background-color:#f1f1f1;	border-radius:10px;	min-height:100px; display: block; position:relative;}
+.dropdown-menu-main > li div:hover {background-color:#fff;}
+.dropdown-menu-main > li div h1 {font:16px/32px "Montserrat"; text-align:center; color:#87212e;	margin:0px 0 20px;	padding:0px;}
+.dropdown-menu-main > li div h2 {font:15px/32px "Montserrat"; text-align:right; color:#87212e;	margin:0px 0 20px;	padding:0px 11px 0 0;}
+.dropdown-menu-main > li div p {font:12px "Montserrat";	text-align:center;	color:#666366;	margin:0px 0 4px 0;	padding:0px;}
+.dropdown-menu-main > li div strong {font:14px "Montserrat"; text-align:center; color:#ff0000;	display:block;}
+.dropdown-menu-main > li div .msg, .careplan, .calender, .record, .healthtips {	width: 57px; height: 59px;  /*     width: 57px; height: 59px; */
+left:-8px;	position: absolute;	text-indent: -10000px;	top:-10px;	display:inline-block;}
+.dropdown-menu-main > li div .msg {	background: url('../images/icons.png') no-repeat -64px -119px;}
+.dropdown-menu-main > li div .careplan {background: url('../images/icons.png') no-repeat -64px -192px;}
+.dropdown-menu-main > li div .calender {background: url('../images/icons.png') no-repeat -64px -264px;}
+.dropdown-menu-main > li div .record {background: url('../images/icons.png') no-repeat -64px -337px;}
+.dropdown-menu-main > li div .healthtips {background: url('../images/icons.png') no-repeat -64px -410px;}
+.dropdown-menu-main > li div .progress-circle { background: url("../images/icons.png") no-repeat scroll -218px -423px rgba(0, 0, 0, 0);
+display: inline-block;  float: left;  margin: -16px 10px 0;  min-height: 56px;  text-indent: -10000px;  width: 56px;}
+.dropdown-menu-main > li div .date { background: url("../images/icons.png") no-repeat scroll -67px -60px rgba(0, 0, 0, 0);  border-radius: 0;
+display: inline-block; float: left; margin: -13px 10px 0;  min-height: 49px;  text-indent: -10000px;  width: 48px;}
+.dropdown-menu-main > li div .textright {font:12px "Montserrat"; text-align:right; float:left; color:#666366; margin:-7px 0 4px 0; padding:0px;	width:128px;}
+.dropdown-menu-main > li div .expand {background: url('../images/icons.png') no-repeat -76px -491px; width:24px; height:24px; right:2px; position: absolute; text-indent: -10000px; bottom:2px; display:inline-block;}
+.dropdown-menu-main > li:hover {background:#216187;	cursor:pointer;}
+.dropdown-menu-main > li > a:hover, .dropdown-menu-main > li > a:focus {color: #262626; text-decoration: none; background-color: #f5f5f5;}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {color: #fff; text-decoration: none;
+background-color: #428bca; outline: 0 none;}
+.open > .dropdown-menu-main { display: block; }
+.open > a {	outline: 0;}
+.dropup .dropdown-menu-main, .navbar-fixed-bottom .dropdown .dropdown-menu-main {top: auto;	bottom: 100%; margin-bottom: 1px;}
+.btn-group, .btn-group-vertical { position: relative; display: inline-block;	vertical-align: middle;}
+.btn-group > .btn, .btn-group-vertical > .btn {	position: relative;	float: left;}
+/*****************************tooltip*****************
+*****************************************************/
+.btn-q {background-color: #6D6E71;	color: #FFFFFF;}
+.btn-q:hover {	background-color: #333;	color: #FFFFFF;	text-decoration:none;}
+.btn1 {	-moz-user-select: none;	background-image: none;	border: 1px solid rgba(0, 0, 0, 0);	border-radius: 50%;	cursor: pointer; display: inline-block; font-size: 14px; font-weight: normal; line-height: 14px;	margin-bottom: 0; padding: 0 4px; text-align: center; vertical-align: middle; white-space: nowrap;}
+/**************************************Health Tips*********************************
+**********************************************************************************/
+.Silhouette { background:url(../images/Silhouette.png) no-repeat top left;  width:203px;  height:418px;  position:relative; float:left;
+top:18px; margin-bottom:30px;}
+.Silhouette-btn {-moz-user-select: none; border: 1px solid rgba(0, 0, 0, 0); cursor: pointer; display: inline-block; margin-bottom: 0;
+padding:0px; text-align: center; vertical-align: middle; white-space: nowrap; position:absolute;}
+.Silhouette-mental {background:url(../images/member_human.png) no-repeat -74px -7px; top:5px; left:73px; width:72px; height:68px;}
+.Silhouette-heart {	background:url(../images/member_human.png) no-repeat -46px -75px; top:73px;	left:45px; width:114px; height:67px;}
+.Silhouette-kidney {background:url(../images/member_human.png) no-repeat -67px -143px; top:140px; left:66px; width:77px; height:68px;}
+.hand-thumbright {	background:url(../images/member_human.png) no-repeat -23px -143px; top:141px; left:22px; width:44px; height:67px;}
+.hand-thumbleft {background:url(../images/member_human.png) no-repeat -138px -143px; top:141px;	left:137px;	width:44px;	height:67px;}
+.Silhouette-legrt {	background:url(../images/member_human.png) no-repeat -65px -277px; top:275px; left:64px; width:41px; height:69px;}
+.Silhouette-leglft {background:url(../images/member_human.png) no-repeat -106px -277px;	top:275px; left:105px; width:41px; height:69px;}
+.Silhouette-colon {background:url(../images/member_human.png) no-repeat -61px -207px; top:206px; left:60px;	width:86px;	height:69px;}
+.Silhouette-circulatory {background:url(../images/member_human.png) no-repeat -68px -345px;	top:344px; left:67px; width:68px; height:68px;}
+.article {max-height:420px;	margin-left:290px;	margin-top:20px; text-align:center;}
+.desc { max-height:100px; max-width:250px; text-align:left;  position:absolute; left:0px;}
+.desc.mental { top:18px; color:#87212e;}
+.desc.joint { top:290px; color:#217861;}
+.desc.heart { top:84px; color:#5e3a51;}
+.desc.heart p {	padding:22px 10px;}
+.desc.kidney { top:154px; color:#355475;}
+.desc.kidney p {padding:22px 10px;}
+.desc.colon { top:222px; color:#21697a;}
+.desc.colon p {	padding:14px 10px;}
+.desc.circulatory { top:356px;  color:#218747;}
+.desc.circulatory p {	padding:14px 10px;}
+.desc strong {	font:72px/68px "Montserrat";	margin:0px;	padding:0px;}
+.desc p {font:12px "Montserrat";	padding:6px 10px;	width:80%;	margin:0px;}
+.article1, .article2, .article3, .article4, .article5, .article6 {background:#f7f7f7;}
+.article .tab {font:18px/40px "Montserrat"; color:#fff;	display:block;	border-radius:10px 10px 0px 0px;}
+.article .tab.mental{background:#87212e;}
+.article .tab.bones{ background:#217861;}
+.article .tab.heart{background:#5e3a51;}
+.article .tab.kidney{background:#355475;}
+.article .tab.colon{ background:#21697a;}
+.article .tab.circulatory{	background:#218747;}
+.article h1{ font:14px "Montserrat"; padding:20px 50px; margin:0px; }
+.article .Source{font:italic 12px "open sans"; padding-bottom:20px; margin:0px;}
+.article .readarticle{font:bold 11px "Montserrat"; padding:10px 0; display:block;}
+/**********************************************New Ticker******************************************
+**************************************************************************************************/
+.alert-container {position:relative; width:100%; float:left;}
+.Min {position: absolute !important; z-index:999; background:#fdfdf8; border:1px solid #ed1c24; padding:0px !important; width:100%;}
+.alertbg {background: url("../images/alertbg.png") no-repeat scroll right center #ed1c24; color: #ffffff; font: 14px/36px "Montserrat";	text-transform: uppercase;	text-align:center;}
+.newalert {	height:36px; margin-right: -12px; overflow-y:scroll; overflow-x:hidden;	padding:0px !important;}
+.newalert-bg-color{ background:#fdfdf8;}
+.newalert ul {margin:0px; padding:0px;}
+.newalert li{list-style:none; display:none}
+.newalert li a {display:block; height:36px; font:14px/36px "open sans";	text-decoration:none; color:#222;}
+.newalert li a:hover{text-decoration:underline;}
+.Arrow {width:30px;	height:10px; position:absolute; left:500px;	bottom:-11px; cursor:pointer}
+.da {background:url(../images/d-arrow.png) no-repeat;}
+.ua {background:url(../images/u-arrow.png) no-repeat;}
+.next {	background: none repeat scroll 0 0 #fff; color: #362f2d; cursor: pointer; font-size: 12px;	padding:1px 3px; position: absolute; right:2px;
+top: 1px; z-index: 1;}
+.prve {	background: none repeat scroll 0 0 #fff; color: #362f2d; cursor: pointer; font-size:12px; padding:0px 2px; position:absolute; right:3px;	top: 19px;	z-index: 1;}
+.col-lg-13{ width:4%;}
+.col-lg-14{ width:96%;}
+/*************************Login and Create account css*************************
+************************************************************/
+.customlogin{ width:40%;}
+.customloginbox{ background: rgba(248, 248, 248, 0.9); border-radius:32px; border: 8px solid #216187; box-shadow: 4px 0 16px #666366; padding:30px 5%;}
+.customloginbox h1 {font:24px "Montserrat";	color:#333;	margin-bottom:30px;	margin-top:0px;	text-align:center;}
+.customloginbox .form-group{ margin-bottom:30px;}
+.customloginbox label {font:16px/24px "Montserrat";	font-weight:normal;	color:#333;	text-transform:uppercase; margin-left:10px;}
+.customloginbox .form-control { border:none; border-radius:10px; box-shadow: 0 0px 2px rgba(0, 0, 0, 0.50) inset; height: 40px;}
+.customloginbox .form-control:focus {border-color: #ddd; box-shadow: 0 0px 1px rgba(200, 200, 200, 0.50) inset, 0 0 2px rgba(148, 148, 148, 0.50);
+outline: 0 none;}
+.forgot-id-pw a, .signin-text a{ color:#0072bc; font:600 11px "open sans"; text-decoration:underline; background:none;}
+.forgot-id-pw strong{ color:#333; font-weight:normal;}
+.login-bg{ background:url(../images/login-bg.jpg) no-repeat top center; padding:125px 0px;}
+.btn.btn-default.custom-login-btn {background: none repeat scroll 0 0 #00a651; color: #fff; font: 18px/24px "Montserrat"; text-transform:uppercase; text-shadow: none; border:0px; border-radius:10px; padding-left:25px; padding-right:25px; margin-right:10px; }
+.custom-badge {	padding:2px 5px;}
+.signin-text{ color:#0072bc; font:600 11px "open sans"; margin-top:15px; background:none;}
+.signin-text a{ color:#0072bc; font:600 18px "open sans";}
+@media (max-width:480px) {
+.customlogin {width:100%}
+}
+/************************My Account Css******************
+********************************************************/
+.custom-account-wrapper { background:#fff; border-radius: 25px; padding: 30px;}
+.custom-myaccount{ width:100%;}
+.custom-myaccount img { border: 2px solid #333; border-radius: 50%; float: left;}
+.custom-myaccount h1{ font-size:40px; color:#87212e; display:inline-block; margin-left:20px;}
+.custom-tab-fullouter{ margin-top:30px;}
+.care-coaches, .primary-care-physicians{ width:100%; float:left; position:relative;}
+.care-coaches h2{ font-size:30px; line-height:50px; color:#87212e; text-align:center; display:block; border-bottom:2px solid #666366; padding-bottom:10px;}
+.care-coaches h2{ margin-top:0px;}
+.care-team {background:#f8f8f8; padding:10px; width:45%; float:left; margin:0 1%} /*15 Oct*/
+.care-team .team-name{ font:600 14px "open sans"; color:#87212e;}
+.description {display:inline-block; margin-left:20px;}
+.description .health{font:600 12px "open sans"; margin-bottom:5px;}
+.description .phone{font:12px "open sans";  margin-bottom:5px;}
+.care-team img { border: 2px solid #333;  border-radius: 50%; width:75px; height:75px; float:left;}
+
+.caregiver{ width:100%; background:#fff; box-shadow:0 1px 5px rgba(102, 99, 102, .50);}
+.caregiver-description button, .care-team button {background: none repeat scroll 0 0 #216187; border: 0 none; border-radius: 25px;
+color: #fff; font: 10px/24px "Montserrat"; margin-top: 5px; margin-left:17px; padding: 0 10px; text-transform: uppercase; display:block;}
+.caregiver-description button{ margin-left:0px;}
+.caregiver-description{ width:100%;}
+.caregiver .custom-caregiver-heading{ background:#87212e; font:16px/34px "Montserrat"; color:#fff; text-align:center;}
+.caregiver .custom-caregiver-desc{ margin:20px auto; width:80%;}
+.caregiver .custom-caregiver-desc .caregiver-title{ font:600 16px "open sans"; color:#333; text-align:left;}
+.caregiver .custom-caregiver-desc .caregivertext{ font:14px/18px "open sans"; text-align:left; margin-bottom:10px;}
+.custom-caregiver-table{ width:100%; font:600 12px "Montserrat";}
+.custom-caregiver-table .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{ border-top:0 none; font:12px "Montserrat";}
+.custom-caregiver-table .radio{margin-top:0 !important; margin-bottom:0 !important;}
+.custom-caregiver-table tr td{ vertical-align:middle !important; padding:5px !important}
+.custom-caregiver-table input[type="radio"]{ display:none; }
+.custom-caregiver-table .radio:before {content: "Yes";display: inline-block;width: 27px;height: 25px;vertical-align:middle;text-align: center;border-radius:0;border-color: #3C6;color: #fff;	background-color: #ccc; font-size:12px !important; border-radius:4px}
+.custom-caregiver-table .radio.customNo:before {content: "No";}
+.custom-caregiver-table input[type=radio]:checked + .radio:before {content: "Yes";	 background-color: #3C6; text-shadow:none;font-size:12px !important;}
+.custom-caregiver-table input[type=radio]:checked + .radio.customNo:before {content: "NO";background-color: #87212e; }
+.btn-yesno{ background: #e1e1e1; border: 1px solid transparent; font-size: 11px; font-weight:none; padding:0px 4px; color:#333; box-shadow:none;
+    text-shadow:none;}
+.btn-yesno:active, .btn-yesno.active { background-color: #3C6; border-color: #3C6; color:#fff;}
+.btn-yesno:hover, .btn-yesno:focus { background-color: #096; border-color: #096; color:#fff;}
+.custom-no:active, .custom-no.active { background-color: #87212e; border-color: #87212e; color:#fff;}
+.custom-no:hover, .custom-no:focus {background-color: #bd2f41; border-color: #bd2f41; color:#fff;}
+.custom-carousel-caregiver .carousel-control.left{ left:-50px !important;}
+.custom-carousel-caregiver .carousel-control.right{ right:-50px !important;}
+.custom-carousel-caregiver .carousel-indicators{ display:none;}
+.mycustom-profile{border-radius:0px; border:0 none; padding:0px;}
+.caregiver .button-bg { background: none repeat scroll 0 0 #ebebeb; padding:10px 0; text-align:center;}
+.caregiver .button-bg button {background: none repeat scroll 0 0 #216187; border: 0 none; border-radius: 25px; color: #fff; font: 10px/24px "Montserrat"; padding: 0 10px; text-transform: uppercase;}
+
+/************************My Account Css End******************
+********************************************************/
+
+/************************My CarePlan Css****************
+********************************************************/
+.custom-action-block {width: 100%;float: right;margin: 5%; position:relative}
+ul.custom-dropdown{ padding:5px; background-color:#2c698d}
+ul.custom-dropdown li{ border-bottom:1px solid rgba(33,97,135,.95)}
+ul.custom-dropdown li:last-child{ border-bottom:none}
+ul.custom-dropdown a{ color:#fff}
+ul.custom-dropdown a:hover{ background-color:#fff, color:rgba(33,97,135,0.95)}
+.dl-horizontal dt{ text-align: left; margin-bottom: 1em; width: auto; padding-right: 1em;}
+.dl-horizontal dd{ margin-left: 0; margin-bottom: 1em;}
+
+/***********full care plan popup***************/
+.popup-title {color: #87212e; font: 28px "montserrat regular"; margin: 30px 0; text-align: center;}
+/***********Responsive css/***********/
+@media (max-width:980px){
+.k-widget.k-window {width:98% !important;}
+}
+@media (max-width:768px) {
+.k-widget.k-window {width:98% !important;}
+}
+/************************My CarePlan Css End*****************
+********************************************************/
+
+/************************My Health Record Css************
+********************************************************/
+.btn.btn-default.custom-cal-btn { padding: 9px 12px; background:#fdfdfd;}
+.btn.btn-default.custom-cal-btn:hover{ background:#87212e; border:1px solid #87212e;}
+.form-horizontal .form-control { border:none; border-radius:10px; box-shadow: 0 0px 2px rgba(0, 0, 0, 0.50) inset; height: 40px;}
+.form-horizontal .form-control:focus { border-color: #ddd; box-shadow: 0 0 1px rgba(200, 200, 200, 0.5) inset, 0 0 2px rgba(148, 148, 148, 0.5);
+ outline: 0 none;}
+.custom-save-button { color: #fff; background-color: #216288; border-color: #216288; font-size:16px; border-radius:20px; padding:5px 22px;   border:none;}
+.bottom-zero{margin-bottom:0}
+p.help-block {border: 1px solid #f00; text-align: center; line-height: 2rem;  border-radius: 15px; padding:2%; background: #f00 !important;
+color:#fff !important; position:absolute; z-index:999; top:40px;}
+h2.sectionTitle span{border: 1px solid #87212e; padding: 0 2rem;border-radius: 2rem;}
+.data-loading { position: relative;}
+.custom-right { float: right !important;}
+.mycheckbox { margin-top: 7px;}
+/************************My Health Record Css End***********
+********************************************************/
+
+/************************Validation Css****************
+********************************************************/
+.custom-padding-zero{ padding-left:0 !important; padding-right:0 !important}
+.custom-padding-zero-right{padding-right:0 !important}
+.custom-padding-zero-left{padding-left:0 !important;}
+.custom-form{ padding:6px}
+.col-md-13{ width:37% !important;}
+.col-md-8-1{ width:61% !important}
+.has-error .form-control,
+.has-error .form-control:focus{ border-color:#f00; box-shadow: 0 0 1px 1px #f00 !important}
+@media (max-width:970px){
+    .alertbg{ font:13px/18px "Montserrat"}
+    .customlogin{ width:60%}
+    #leftWidget{ margin:0 0 5% 0}
+}
+@media (max-width:768px) {
+    .col-lg-14{ width:93%}
+    .Arrow{ left:230px}
+    .icon{ left:0px}
+    .alertbg{ font:13px/36px "Montserrat"}
+    .customlogin{ width:80%}
+    .custom-xs-padding-zero{ padding:0}
+    .newalert li a{font:13px/18px "Montserrat"}
+    .custom-action-block{ margin:2%}
+    ul.k-reset.k-header.k-scheduler-views{ float:left !important; margin:1% 0}
+}
+
+@media (max-width:480px) {
+    .alertbg{ font:13px/18px "Montserrat"}
+    .col-lg-14{ width:90%}
+    .Arrow{ left:100px}
+    .icon{ left:-10px;top:-35px}
+    .title{ font:20px "montserrat regular"; margin:50px 0 0 10px}
+    .customlogin{ width:100%}
+    #header img{ width:150px}
+    .custom-xs-padding-zero{ margin-left:-5px}
+    #leftWidget{ margin:0 0 5% 0}
+    .newalert li a{ font:14px/17px "open sans"; height:56px}
+    #noteText .form-control{ width:70%}
+    ul.k-reset.k-header.k-scheduler-views{ text-align:center}
+    ul.k-reset.k-header.k-scheduler-views li:first-child{ border-radius:0}
+    ul.k-reset.k-header.k-scheduler-views li:last-child{border-left:1px solid #000; border-radius:4px; margin:5px 0}
+    ul.k-reset.k-header.k-scheduler-views li:last-child:hover{ border-left:none !important}
+}
+/************************Validation Css End ************
+********************************************************/
+
+/************************Care plan sign-off ************
+********************************************************/
+@media (max-width:970px){
+    .k-grid tbody button.k-button{width:70px !important}
+    .k-grid-edit{ width:70px}
+}
+@media (max-width:768px) {
+    .k-widget.k-window{ width:450px !important}
+}
+@media (max-width:480px) {
+    .k-widget.k-window{ width:300px !important}
+}
+.k-grid tbody button.k-button{ min-width:65px !important}
+button.k-button.signoff-button{ margin-top:2px}
+.modal-content{ border-radius:45px}
+/************************Calendar updates************
+****************************************************/
+.custom-event{ text-shadow:none !important}
+.page-header,h1.title.mycenter{ margin:0 !important}
+.page-header{ border:none !important}
+#circle{ margin-left:10%}
+.progress{ margin-bottom:0 !important}
+.k-grid-edit{ width:88px}
+.mysmallbox ul.k-reset.k-header.k-scheduler-views{ display:none}
+/************************Registration ******************
+********************************************************/
+.registerTitle {color: #333; font: 18px "montserrat regular"; margin-bottom: 10px; margin-top: 20px; padding-left: 68px; vertical-align:top;}
+.required-text {color: #666; margin-bottom: 30px; padding-left: 68px;}
+/************************My Calender Css Start***********
+********************************************************/
+#team-schedule {text-align: right; line-height:0}
+.checkbox {display: inline-block;cursor: pointer;line-height:25px;}
+#people input[type=checkbox] {display:none;}
+.checkbox:before {content: "";display: inline-block;width: 25px;height: 25px;vertical-align:middle; background-color: rgb(173, 216, 230);color: #f3f3f3;text-align: center;border-radius:15px;}
+input[type=checkbox]:checked + .checkbox:before {content: "\2713";text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);	font-size: 15px;}
+.checkbox.customcheck:before {background-color: rgb(255, 165, 0) ; margin-left:10px;}
+.radio {display: inline-block;cursor: pointer;line-height:25px;}
+.custom-list-pill input[type="radio"]{ display:none} 
+.radio:before {content: "";display: inline-block;width: 25px;height: 25px;vertical-align:middle; background-color: rgb(173, 216, 230);color: #f3f3f3;text-align: center;border-radius:50%; margin-right:8px;}
+input[type=radio]:checked + .radio:before {content: "\2605";text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);	font-size: 15px;}
+.radio.customradio:before {background-color: rgb(255, 165, 0) ; margin-top:0}
+.radio.customradio1:before {background-color: rgb(135, 33, 46) ; margin-top:0}
+label.radio.customradio,label.radio.customradio1{ margin-top:10px !important}
+/* Checkbox End */
+/***********************************Messaging css*********************************
+**********************************************************************************/
+.custom-message-model label{ display:block; cursor:pointer}
+.custom-message-model input,.custom-message-model textarea{ width:99%; border:1px solid #ccc; border-radius:4px; margin-bottom:2%;display:block; font-size:14px !important; line-height:20px;padding:3px}
+.custom-message-model textarea{ height:150px; text-indent:0 !important}
+.custom_back_none{background: none;border: none;display:inline-block; }
+.custom-dropdown-menu{ max-height:200px; overflow-y:scroll}
+.custom-dropdown-menu input{ display:inline-block !important; width:auto !important}
+.custom-dropdown-menu li{ width:200px; float:left; margin-left:5px}
+.custom-dropdown-menu li label span{ display:inline-block; margin:-1px 5px}
+.custom-nameList ul.dropdown-menu.dropdown-menu-form{ left:inherit; right:0; overflow:auto !important}
+.custom-to{display:block; font-size:14px !important; line-height:20px;padding:3px;border:1px solid #ccc;border-radius:4px; height:22px}
+.custom-to p{ display:inline-block !important;margin:0 5px 0; background:#DEE7ED; padding:1px 10px; border-radius:20px}
+.custom-nameList button {border: none;background: none;padding: 0;margin: 0;}
+.custom-nameList button.btn-default:hover {background: none;color: #000;}
+.custom-form-group{ display:block; position:relative}
+.custom-form-group p.help-block{ top:inherit !important; bottom:-63px}
+.custom-message-model ul ul{ min-width:200px}
+.custom-message-model ul ul .form-control{ box-shadow:none; height:25px !important}
+.custom-message-model ul .dropdown-header,.custom-message-model ul .dropdown-menu li a{ padding:0 12px 0 9px}
+.checkbox.customcheck1:before {background-color: rgb(226, 65, 23) ;}
+.custom-list-pill input[type="checkbox"]{ display:none}
+.custom-list-pill a {margin-top: 10px;}
+.custom-message-model ul ul li:first-child{ display:none !important}
+.custom-message-model ul ul li:nth-child(2),.custom-message-model ul ul li:nth-child(3){ display:none !important}
+.custom-margin{ float:left; width:95%;}
+.custom-margin span,.custom-margin pre{ display:block; margin-top:2%}
+.custom-margin span{ font-weight:800;}
+.profile-btn{ background:#87212e !important; border-radius:20px; color:#fff; text-shadow:none; border:none; margin-right:10px;}
+/*******footer css*********/
+footer{ margin:2% 0;}
